@@ -1,8 +1,8 @@
 {
 	"name": "react-native-help-scout",
 	"version": "0.1.0",
-	"main": "./dist/index.js",
-	"typings": "./dist/index.d.ts",
+	"main": "./src/index.js",
+	"typings": "./src/index.d.ts",
 	"repository": "git@github.com:codemotionapps/react-native-help-scout.git",
 	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)",
 	"homepage": "https://github.com/codemotionapps/react-native-help-scout",
@@ -10,7 +10,7 @@
 	"license": "MIT",
 	"scripts": {
 		"prepublishOnly": "yarn run clean && yarn run copy-readme && yarn run copy-license && yarn run build",
-		"clean": "rimraf dist",
+		"clean": "rm -rf dist",
 		"copy-readme": " ",
 		"copy-license": " ",
 		"build": "tsc",

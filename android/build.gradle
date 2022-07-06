@@ -11,7 +11,7 @@ buildscript {
 	if (project == rootProject) {
 		repositories {
 			google()
-			jcenter()
+			mavenCentral()
 		}
 		dependencies {
 			classpath 'com.android.tools.build:gradle:3.4.1'
@@ -55,7 +55,7 @@ repositories {
 		url "$rootDir/../node_modules/jsc-android/dist"
 	}
 	google()
-	jcenter()
+	mavenCentral()
 }
 
 def _beaconVersion = safeExtGet("helpscoutBeacon", "2.0.2")
@@ -67,7 +67,8 @@ dependencies {
 	implementation 'com.facebook.react:react-native:+'  // From node_modules
 
 	// noinspection GradleDynamicVersion
-	implementation "com.helpscout:beacon-core:${_beaconVersion}"
+	// implementation "com.helpscout:beacon-core:${_beaconVersion}"
 	// noinspection GradleDynamicVersion
-	implementation "com.helpscout:beacon-ui:${_beaconVersion}"
+	// implementation "com.helpscout:beacon-ui:${_beaconVersion}"
+	implementation "com.helpscout:beacon:3.0.2"
 }
